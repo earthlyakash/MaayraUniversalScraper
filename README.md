@@ -6,7 +6,7 @@ This tool lets you scrape images from any website using a **dynamic step-based U
 
 - Build scraping logic by adding steps like `class`, `id`, `tag`, `click`, etc.
 - Automatically creates folders from attributes like `id`, `data-asin`, etc.
-- Click-through support to scrape deeper pages (like Amazon product pages).
+- Click-through support to scrape deeper pages.
 - Auto-extracts image links from `src`, `style`, `data-src`, `data-a-dynamic-image`, and more.
 
 ---
@@ -32,7 +32,7 @@ This tool lets you scrape images from any website using a **dynamic step-based U
 
 ### 🔹 Example Structure
 
-To scrape Amazon search results, click the product, and download images:
+To scrape product search results, click the product, and download images:
 
 ```plaintext
 .class:s-result-item
@@ -66,7 +66,7 @@ Scraper will extract images from any of the following (automatically):
 
 ---
 
-## ✨ Use Case: Nykaa Product Page
+## ✨ Use Case:Product Page
 
 **HTML Snippet:**
 ```html
@@ -155,7 +155,7 @@ output/
 
 ## ⚙️ Real Use Case Examples
 
-### Amazon Product Page
+### Product Page
 ```plaintext
 .class:s-result-item
   @folder:data-asin
@@ -165,11 +165,6 @@ output/
         click
       class:image
         tag:img
-```
-
-### Nykaa Full Size Image
-```plaintext
-tag:img
 ```
 
 ---
